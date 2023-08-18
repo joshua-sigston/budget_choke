@@ -1,0 +1,24 @@
+.trash_can {
+  color: hsl(var(--clr-red-crayola));
+}
+
+.expenses_table {
+  display: grid;
+  overflow-x: scroll;
+}
+
+table {
+  width: 100% ;
+}
+
+td, th {
+  text-align: center;
+  padding-inline: 1em;
+  font-size: var(--fs-400);
+}
+
+.expense_trash_can {
+  border: none;
+  background-color: hsla(0, 0%, 100%, 0);
+  min-width: 3rem;
+}

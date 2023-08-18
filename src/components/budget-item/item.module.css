@@ -1,0 +1,42 @@
+.budget_card {
+  --random: var(--accent);
+  border-radius: .5rem;
+  padding: .5em;
+  background-color: hsla(var(--clr-white-three), 0.5);
+  border: 3px solid hsl(var(--random));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  flex: 1 1 300px;
+}
+
+.budget_card .top_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress_text {
+  display: flex;
+  gap: 1em;
+}
+
+.trash_can {
+  color: hsl(var(--clr-red-crayola));
+}
+
+.delete_btn {
+  background-color: hsl(var(--clr-red-crayola));
+  padding-inline: 1em;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow-sketch);
+}
+
+@media screen and (min-width: 650px) {
+
+  .delete_btn {
+    height: var(--fs-500);
+  }
+}
